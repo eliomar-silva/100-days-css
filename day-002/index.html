@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 02</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="frame">
+      <div id="center">
+        <div class="ln-0 n-anim"></div>
+        <div class="ln-1 n-anim"></div>
+        <div class="ln-2 n-anim"></div>
+      </div>
+    </div>
+
+    <script>
+      center.addEventListener("click", () => {
+        const anim = document.querySelectorAll(".n-anim");
+        anim.forEach((anim) => anim.classList.remove("n-anim"));
+        center.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
