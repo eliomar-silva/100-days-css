@@ -1,0 +1,89 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  background: #4C4C4C;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle-time {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #242424;
+  border: 8px solid #3A3A3A; 
+}
+.bg {
+  stroke: #242424;
+  stroke-width: 3px;
+  fill: none;
+}
+.progress {
+  stroke: #F85B5B;
+  stroke-width: 3px;
+  fill: none;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke-dasharray: 589;
+  animation: turn 6s linear infinite;
+}
+.dot {
+  stroke: #D3D3D3;
+  stroke-width: 3px;
+  stroke-dasharray: 0 13;
+  stroke-linecap: round;
+  fill: none;
+}
+.text {    
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  color: #fff;
+}
+.date, .beat, .kcal {
+  font-size: 12px;
+  padding: auto;
+  font-weight: 400;
+}
+.time {
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.beat > svg {
+  fill: #F85B5B;
+  animation: beat 1s ease-in-out infinite;
+}
+
+@keyframes turn {
+  0% {
+    stroke-dashoffset: 589;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -589;
+  }
+}
+@keyframes beat {
+  0%{
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
