@@ -1,0 +1,114 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background: #000;
+  border-radius: 3px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);  
+  filter: contrast(30);
+  overflow: hidden;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);  
+  filter: blur(10px);
+}
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);  
+  border-radius: 50%;
+  background-color: #fff;
+
+}
+.boll-center { 
+  width: 100px;
+  height: 100px;
+}
+.boll-01 {  
+  width: 30px;
+  height: 30px; 
+  transform-origin: 40px 90px;
+  animation: giro 10s infinite linear; 
+}
+.boll-02 {  
+  width: 27px;
+  height: 27px; 
+  transform-origin: -40px 80px;
+  animation: giro 10s infinite ease-in; 
+}
+.boll-03 {   
+  width: 27px;
+  height: 27px; 
+  transform-origin: -60px 50px;
+  animation: giro 9s infinite ease-in-out; 
+}
+.boll-04 {  
+   width: 28px;
+  height: 28px; 
+  transform-origin: 80px -30px;
+  animation: giro 7s infinite ease; 
+}
+.boll-05 {  
+  width: 26px;
+  height: 26px; 
+  transform-origin: -45px 20px;
+  animation: giro 4s infinite ease-out; 
+}
+.boll-06 {  
+  width: 26px;
+  height: 26px; 
+  transform-origin: -80px -20px;
+  animation: giro 6s infinite ease-in-out; 
+}
+.boll-07 {    
+  width: 25px;
+  height: 25px; 
+  transform-origin: 75px 45px;
+  animation: giro 3s infinite linear; 
+}
+.boll-08 {    
+  width: 28px;
+  height: 28px; 
+  transform-origin: 20px 35px;
+  animation: giro 6s infinite ease-in; 
+}
+.boll-09 {    
+  width: 26px;
+  height: 26px; 
+  transform-origin: 45px -65px;
+  animation: giro 5s infinite ease-in-out; 
+}
+.boll-10 {    
+  width: 26px;
+  height: 26px; 
+  transform-origin: -45px -45px;
+  animation: giro 4s infinite ease-in-out; 
+}
+.boll-11 {    
+  width: 35px;
+  height: 35px; 
+  transform-origin: 20px 20px;
+  animation: giro 7s infinite ease-in-out; 
+}
+.boll-12 {    
+  width: 35px;
+  height: 35px; 
+  transform-origin: -20px -20px;
+  animation: giro 7s infinite ease-in; 
+}
+
+@keyframes giro {
+  from {
+    transform: rotate(0deg) translate(-50%, -50%) ;
+  }
+  to {
+    transform: rotate(360deg) translate(-50%, -50%) ;
+  }
+}
